@@ -2,6 +2,8 @@
 
 To run `hello.py`, it is required to install `bcc` at first:
 
+## Initialization
+
 ```shell
 $ sudo dnf install -y bcc
 ```
@@ -38,3 +40,9 @@ This is the result of calling `trace_print`. You can see this content as well by
            <...>-14460   [008] ...21  5333.547008: bpf_trace_printk: Hello World!
            <...>-14461   [004] ...21  5333.548709: bpf_trace_printk: Hello World!
 ```
+
+## Samples
+
+* `hello.py`: Sample prink, PID retrieval;
+* `hello-hashmap.py`: Sends data from kernel space to user space in a map; Hashmap usage;
+* `hello-perf-output.py`: Sends data from kernel space to user space in a ring buffer; More process related information retrieval
