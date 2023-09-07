@@ -1,4 +1,4 @@
-TARGETS = hello hello-func
+TARGETS = hello hello-func random-kill-icmp
 
 all: $(TARGETS)
 .PHONY: all
@@ -16,3 +16,4 @@ clean:
 	- rm *.bpf.o
 	- rm -f /sys/fs/bpf/hello 
 	- rm -f /sys/fs/bpf/hello-func
+	- rm -f /sys/fs/bpf/random-kill-icmp
